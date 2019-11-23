@@ -36,13 +36,13 @@ function App() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <section>
+      {/* <section>
         <div className="d-flex justify-content-around options">
           <div className="option_day p-2">HOY</div>
           <div className="option_day p-2">MAÑANA</div>
           <div className="option_day p-2">5 DIAS</div>
         </div>
-      </section>
+      </section> */}
       <section>
         {/* <SearchBar setDataWeather={setDataWeather} /> */}
       </section>
