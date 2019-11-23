@@ -1,13 +1,135 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body, html {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+}
+
+.main {
+  padding-right: 0px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+}
+.brand {
+  display: none;
+}
+.form-inline {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  width: 70%;
+  margin-left: 1rem;
+}
+
+.form-inline button {
+  border: 0px !important;
+}
+
+.navbar-toggler {
+  border: 0px;
+}
+.navbar-toggler-icon {
+  color: white !important;
+  /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
+
+}
+.options {
+  background-color: rgb(255, 176, 86);
+}
+.option_day {
+ border: 1px solid white;
+ flex: 1 1 auto;
+ text-align: center;
+ cursor: pointer;
+ color: rgb(33, 110, 100);
+ font-weight: bold;
+}
+
+.option_day:hover {
+  background-color: rgba(243, 238, 229, 0.616);  
+}
+.content {
+  background: #177DF3;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding-top: 3rem;
+}
+.content>div {
+  margin: 0rem 1rem 1rem 1rem;
+}
+.content div img {
+  width: 80px;
+}
+.temp {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+.details>div {
+  display: flex;
+}
+
+.details>div>div {
+  margin: .5rem 1rem;
+  color: white
+}
+.details>div>div:nth-child(1) {
+  flex: 0 1 50%;
+  text-align: right;
+}
+.details>div>div:nth-child(2) {
+  flex: 0 1 50%;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#autocomplete {
+  width: 80%;
+  background: rgba(23, 126, 243, 0.417);
+}
+
+@media (min-width: 991.98px) { 
+  html {
+    font-size: 18px;
+  }
+  .navbar {
+    flex-direction: row-reverse !important;
+  }
+  .brand {
+    display: inline-block;
+    position: absolute;
+    left: 2rem;
+  }
+  .mr-auto {
+    margin-left: 40%;
+  }
+  .form-inline {
+    width: 40%;
+  }
+  .details>div>div:nth-child(2) {
+    flex: 0 1 30%;
+  }
+  .details>div>div:nth-child(1) {
+    flex: 0 1 30%;
+  }
 }
