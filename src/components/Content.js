@@ -54,7 +54,7 @@ function Content(props) {
           )
           : (
             <div className="temp d-flex justify-content-center align-items-center">
-              <h3 className="text-center">use el buscadór e ingrese un lugar válido</h3>
+              <h3 className="text-center">use el buscador e ingrese un lugar válido</h3>
             </div>
           )
         }
