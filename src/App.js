@@ -13,7 +13,6 @@ function App() {
   const [ day, setDay ] = useState(1); 
 
   const setDataWeather = (site) => {
-    console.log(site);
     setLat(site.geometry.location.lat());
     setLng(site.geometry.location.lng());
   }

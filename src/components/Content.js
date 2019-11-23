@@ -15,7 +15,6 @@ function Content(props) {
     (async function loadWeather() {
       const response = await getWeather(location, day);
       if (response.status && response.status === 200) {
-        console.log(response.data);
         setWeather(response.data);
         setIconWeather(`http://openweathermap.org/img/w/${response.data.weather[0].icon}.png`);
       }
