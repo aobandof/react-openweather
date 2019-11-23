@@ -11,4 +11,4 @@ Además usa la api de google para autocompletar los lugares que tipeamos en el b
 en develop para poder probarla, hay que crear la variable de entorno REACT_APP_WEATHER_KEY con el valor de la key obtenida en https://openweathermap.org/
 
 enlace de prueba:
-[https://aobandof-react-openweather.netlify.com/]('https://aobandof-react-openweather.netlify.com/')
+https://aobandof-react-openweather.netlify.com/
